@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Tweets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+    header ul li {
+      display: inline;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>📣 My Recent Tweet</h1>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-  <!-- Example embedded tweet -->
-  <blockquote class="twitter-tweet">
-    <p lang="en" dir="ltr">
-      Just published my first HTML webpage! 💻🎉<br>
-      #learning #webdev<br>
-      <a href="https://twitter.com/ALX_Africa/status/1697626459311845580">August 31, 2023</a>
-    </p>
-    &mdash; ALX (@ALX_Africa)
-  </blockquote>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <main>
+    <article>
+      <h1>📣 My Recent Tweet</h1>
 
-  <p><a href="index.html">← Back to Homepage</a></p>
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          Just published my first HTML webpage! 💻🎉<br>
+          #learning #webdev<br>
+          <a href="https://twitter.com/ALX_Africa/status/1697626459311845580">August 31, 2023</a>
+        </p>
+        &mdash; ALX (@ALX_Africa)
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Your Name - <a href="https://github.com/simon8384" target="_blank">here</a>.</p>
+  </footer>
 
 </body>
 </html>
-
